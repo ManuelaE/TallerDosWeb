@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/main.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="/imagenes/img_uno/header_logo.png" alt="">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#quienes">Quiénes somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="/tienda">Tienda</a></li>
+            <li><a class="nav__rosa" href="#servicios">Donar</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="home">
+        <h1>¡El 50 % de tu compra es donado a la fundación!</h1>
+    </header>
+    <main>
+        <section data-mascota='{{titulo}}' class="mascota">
+        <nav>
+            <ul>
+                <li class="mascota__perro">PERROS</li>
+                <li class="mascota__gato">GATOS</li>
+                <li class="mascota__hams">HÁMSTERS</li>
+                <li class="mascota__otros">OTROS</li>
+            </ul>
+        </nav>
+        </section>
+        <section class="accesorio">
+            <p class="accesorio__titulo">ESCOGE QUE QUIERES VER</p>
+
+            <section class="accesorio__lista">
+                <ul>
+                    {{#each lista}}
+                        <li data-titulo='{{this}}' class="accesorio__elegido">{{this}}</li>
+                    {{/each}}
+                </ul>
+            </section>
+        </section>
+        <section class="color">
+            <p>SELECCIONA UN COLOR</p>
+
+            <section class="color__lista">
+                <ul>
+                    <li class="mascota__azul">azul</li>
+                    <li class="mascota__amarillo">amarillo</li>
+                    <li class="mascota__verde">verde</li>
+                    <li class="mascota__rojo">rojo</li>
+                    <li class="mascota__otro">otros</li>
+                </ul>
+            </section>
+        </section> 
+            <h2 data-titulo="{{accesorio}}" class="titulo">{{accesorio}}</h2>
+            <section class="img">
+                {{#each productos}}
+                <div class="img__cajon">
+                    <img class="img__imagen" src="{{img}}" alt="" height="300px" width="250px">
+                    <p class="img__tit">{{titulo}}</p>
+                    <p class="img__precio">$ {{precio}}</p>
+                <section class="img__botones">
+                    <button data-titulo="{{titulo}}" class="img__ver">VER MÁS</button>
+                    <button data-titulo="{{titulo}}" class="img__add">AÑADIR</button>
+                </section>
+                </div>
+                {{/each}}
+            </section>
+        <section>
+            <h2>MARCAS ALIADAS</h2>
+            <section>
+                <img src="" alt="">
+            </section>
+        </section> 
+    </main>
+    <script src="/scripts/main.js"></script>
+</body>
