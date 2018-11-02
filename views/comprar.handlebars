@@ -28,8 +28,8 @@
                 <section class="compra__carro__prop">
                     {{#each productos}}
                     <section class="compra__carro__prop__fn">
-                        <p>{{@index}}</p>
-                        <p>{{titulo}}</p>
+                        <p class="compra__carro__prop__fn__num">{{@index}}</p>
+                        <p class="compra__carro__prop__fn__titu">{{titulo}}</p>
                         <p class="compra__carro__prop__fn__precio">{{precio}}</p>
                     </section>
                     {{/each}}
@@ -40,12 +40,12 @@
                 </section>
             </section>
             <section class="compra__pagar">
-                <h2>Detalles de pago</h2>
-                <p>Nombre completo</p>
+                <h2 class="compra__pagar__tit">Detalles de pago</h2>
+                <p class="compra__pagar__dat">Nombre completo</p>
                 <input type="text">
-                <p>Número de la tarjeta</p>
+                <p class="compra__pagar__dat">Número de la tarjeta</p>
                 <input type="text">
-                <p>Fecha de vencimiento</p>
+                <p class="compra__pagar__dat">Fecha de vencimiento</p>
                 <input type="text">
                 <button>PAGAR</button>
             </section>

@@ -168,17 +168,91 @@ main .compra__carro__prop__fn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 2% 7% 2% 5%;
+}
+
+main .compra__carro__prop__fn__num {
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0% 0% 0% 12%;
+}
+
+main .compra__carro__prop__fn__titu {
+  text-align: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+main .compra__carro__prop__fn__precio {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0% 4%;
+}
+
+main .compra__carro__tot {
+  font-family: WonderBold;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 4% 7% 5% 5%;
+}
+
+main .compra__carro__tot__txt {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  padding: 0% 7%;
+  text-align: left;
+}
+
+main .compra__carro__tot__res {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0% 4%;
 }
 
 main .compra__pagar {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin: 5% 0% 5% 8%;
+}
+
+main .compra__pagar__tit {
+  color: #000744;
+  margin-bottom: 7%;
+}
+
+main .compra__pagar__dat {
+  font-family: WonderMedium;
+  font-size: 15px;
+  margin-bottom: 3%;
 }
 /*# sourceMappingURL=comprar.css.map */

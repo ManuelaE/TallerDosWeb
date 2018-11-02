@@ -150,7 +150,6 @@ main{
             &__prop{
                 font-family: WonderRegular;
                 color: white;
-                
                 font-size: 15px;
                 display: flex;
                 flex-direction: column;
@@ -158,18 +157,69 @@ main{
 
                 &__fn{
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    
                     flex-direction: row;
+                    margin: 2% 7% 2% 5%;
+
+                    &__num{
+                        text-align: left;
+                        flex: 1;
+                        padding: 0% 0% 0% 12%;
+                    }
+
+                    &__titu{
+                        text-align: center;
+                        flex: 3;
+                    }
+
+                    &__precio{
+                        text-align: center;
+                        flex: 1;
+                        padding: 0% 4%;
+                    }
                 }
             }
 
             &__tot{
+                font-family: WonderBold;
+                letter-spacing: 3px;
+                color: white;
+                font-size: 17px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin: 4% 7% 5% 5%;
 
+                &__txt{
+                    flex: 4;
+                    padding: 0% 7%;
+                    text-align: left;
+                }
+
+                &__res{
+                    text-align: center;
+                    flex: 1;
+                    padding: 0% 4%;
+                }
             }
         }
 
         &__pagar{
             flex: 1;
+            margin: 5% 0% 5% 8%;
+
+            &__tit{
+                color: $azulOs;
+                margin-bottom: 7%;
+            }
+
+            &__dat{
+                font-family: WonderMedium;
+                font-size: 15px;
+                margin-bottom: 3%;
+            }
         }
     }
 }
