@@ -112,3 +112,29 @@ h2{
     width: 100%;
     height: 56px;
 }
+
+main{
+
+    width: auto;
+    margin: 0% 7%;
+
+    .compra{
+        display: flex;
+        flex-direction: row;
+
+        &__carro{
+
+            &__tit{
+                color: $azulOs;
+            }
+
+            &__prop{
+
+            }
+
+            &__tot{
+
+            }
+        }
+    }
+}

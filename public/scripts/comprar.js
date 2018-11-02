@@ -7,4 +7,6 @@ window.addEventListener('load', function(){
         var x = parseInt(elem.innerHTML);
         total += x;
     });
+
+    document.querySelector('.compra__carro__tot__res').innerHTML = total;
 });
