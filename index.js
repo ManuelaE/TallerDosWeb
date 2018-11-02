@@ -1,9 +1,14 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const hbs = require('express-handlebars');
 const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(express.json());
 
 const url = 'mongodb://localhost:27017';
 const dbName = 'tienda';
@@ -42,10 +47,14 @@ app.get('/tiendageneral', function (request, response) {
       response.send(err);
       return;
     }
+
+    var list = [];
+    list = accesorios(list, 'general');
     
     var contexto = {
       productos: docs,
-      titulo: request.query.mascota
+      titulo: request.query.mascota,
+      lista: list
     };
 
     response.render('main', contexto);
@@ -185,6 +194,48 @@ app.get('/descrip', function (request, response) {
   });
 });
 
+app.get('/comprar', function(request, response){
+  const col = db.collection('carrito');
+ 
+  col.find({}).toArray(function(err, docs){
+
+    if(err){
+      console.error(err);
+      response.send(err);
+      return;
+    } 
+
+    var contexto = {
+      productos: docs
+    }
+
+    response.render('comprar', contexto);
+
+  });
+});
+
+app.post('/api/carritodecompra', function(request, response){
+
+  const col = db.collection('carrito');
+  const colec = db.collection('productos');
+
+  colec.find({
+    titulo: {
+      '$eq': request.body.titulo
+    }
+  }).toArray(function(err, docs){
+
+    if(err){
+      console.error(err);
+      response.send(err);
+      return;
+    } 
+
+    col.insert(docs[0]);
+  });
+
+});
+
 function accesorios (elem, variable){
   switch(variable){
     case 'perro':
@@ -203,6 +254,18 @@ function accesorios (elem, variable){
     elem = [
       'camas',
       'ropa',
+      'bocados'
+    ]
+    return elem;
+    break;
+
+    case 'general':
+    elem = [
+      'collares',
+      'correa',
+      'camas',
+      'ropa',
+      'arnés',
       'bocados'
     ]
     return elem;

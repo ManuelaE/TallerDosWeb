@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/descrip.css" />
+</head>
+<body>
+    <main>
+        <section class="compra">
+            <section class="compra__carro">
+                <h2>¡Hola!</h2>
+                <p>Has agregado al carrito estos ítems de nuestra tienda:</p>
+                <h2>Carrito</h2>
+                <section class="compra__carro__prop">
+                    {{#each}}
+                        <p>{{@index}}</p>
+                        <p>{{titulo}}</p>
+                        <p>{{precio}}</p>
+                    {{/each}}
+                </section>
+                <section class="compra__carro__tot">
+                    <p class="compra__carro__tot__txt">TOTAL</p>
+                    <p class="compra__carro__tot__res"></p>
+                </section>
+            </section>
+            <section class="compra__pagar">
+                <h2>Detalles de pago</h2>
+                <p>Nombre completo</p>
+                <input type="text">
+                <p>Número de la tarjeta</p>
+                <input type="text">
+                <p>Fecha de vencimiento</p>
+                <input type="text">
+                <button>PAGAR</button>
+            </section>
+        </section>
+    </main>
+    <script src="/scripts/comprar.js"></script>
+</body>
+</html>
