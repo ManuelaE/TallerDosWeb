@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/descrip.css" />
 </head>
 
 <body>
@@ -19,32 +19,62 @@
             <li><a class="nav__rosa" href="#servicios">Donar</a></li>
         </ul>
     </nav>
-    <section class="foto">
-        {{#each productos}}
-        <img class="foto__img" src="{{img}}" alt="" height="400px" width="400px">
-        <section>
-            <img class="foto__vista1" src="{{img}}" alt="" height="100px" width="100px">
-            <img class="foto__vista2" src="{{img}}" alt="" height="100px" width="100px">
-        </section>
-        {{/each}}
-    </section>
-    <section>
-        <h1></h1>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <section>
-            <button></button>
-            <button></button>
-            <button></button>
-        </section>
-    </section>
+    <section class="necesario"></section>
+    <main>
+        <section class="descrip">
+            <section class="descrip__foto">
+                {{#each productos}}
+                <img class="descrip__foto__img" src="{{img}}" alt="" height="400px" width="400px">
+                <section class="descrip__foto__vistas">
+                    <img class="descrip__foto__vista1" src="{{vista1}}" alt="" height="100px" width="100px">
+                    <img class="descrip__foto__vista2" src="{{vista2}}" alt="" height="100px" width="100px">
+                </section>
+                {{/each}}
+            </section>
+            <section class="descrip__des">
+                {{#each productos}}
+                <h1 class="descrip__des__tit">{{titulo}}</h1>
+                <p>Precio: ${{precio}}</p>
+                <p>Talla: {{talla}}</p>
+                <p>Color:</p>
+                <p class="des__color" data-color="{{color}}"></p>
+                <p>{{descripcion}}</p>
+                <section>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
+                {{/each}}
+            </section>
+        </section>    
     <section>
         <h2></h2>
         <section>
             <img src="" alt="">
         </section>
     </section>
+    <footer>
+            <div>
+                <img src="./images/footer_img.png" alt="" height="100px">
+            </div>
+            <div>
+                <p class="parrafo__uno">
+                    <span>CONTACTO</span><br>
+                    FUNDACIÓN HOPE. <br>
+                    CRA 83A # 48 - 45 <br>
+                    RESCATE@HOPE.COM
+                </p>
+            </div>
+            <div>
+                <ul class="parrafo__uno">
+                    <a href="#"><span>HOME</span></a>
+                    <a href="">QUIÉNES SOMOS</a>
+                    <a href="">SERVICIOS</a>
+                    <a href="">DONAR</a>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <script src="/scripts/descrip.js"></script>
 </body>
 </html>

@@ -256,9 +256,8 @@ main{
             }
         }
     }
-}
 
-.titulo{
+    .titulo{
     color: $azulOs;
     margin: 0% 30% 4% 30%;
     text-align: center;
@@ -301,3 +300,53 @@ main{
         }
     }
 }
+
+footer{
+
+    margin: 4% 0% 0% 0%;
+    background-color: $verde;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    
+    div{
+
+        flex: 1;
+
+        &:nth-child(1){
+            margin: 0px 0px 0px 75px;
+        }
+
+        &:nth-child(2){
+
+            color: white;
+            margin: 0px 0px 0px 75px;
+            line-height: 45px;
+
+            span{
+                font-family: WonderBold;
+            }
+        }
+
+        &:nth-child(3){
+
+            color: white;
+            margin: 0px 0px 0px 75px;
+            line-height: 45px;
+
+            ul{
+                list-style-type: none;
+            }
+
+            span{
+                font-family: WonderBold;
+            }
+
+
+        }
+    }
+}
+}
+
