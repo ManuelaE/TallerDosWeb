@@ -133,12 +133,12 @@ main .compra__carro {
 }
 
 main .compra__carro__tit {
-  padding: 5% 5% 2% 5%;
+  padding: 10% 5% 2% 7%;
   font-size: 24px;
 }
 
 main .compra__carro__des {
-  padding: 0% 5%;
+  padding: 0% 7%;
   font-size: 15px;
   font-family: WonderRegular;
   color: white;
@@ -178,7 +178,7 @@ main .compra__carro__prop__fn {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 2% 7% 2% 5%;
+  margin: 2% 7% 2% 7%;
 }
 
 main .compra__carro__prop__fn__num {
@@ -219,7 +219,7 @@ main .compra__carro__tot {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 4% 7% 5% 5%;
+  margin: 4% 7% 10% 7%;
 }
 
 main .compra__carro__tot__txt {
@@ -245,14 +245,83 @@ main .compra__pagar {
   margin: 5% 0% 5% 8%;
 }
 
-main .compra__pagar__tit {
+main .compra__pagar__if__tit {
   color: #000744;
-  margin-bottom: 7%;
+  margin-bottom: 9%;
 }
 
-main .compra__pagar__dat {
+main .compra__pagar__if__dat {
   font-family: WonderMedium;
   font-size: 15px;
   margin-bottom: 3%;
+}
+
+main .compra__pagar__if__inp {
+  font-family: WonderMedium;
+  font-size: 15px;
+  margin-bottom: 3%;
+  width: 230px;
+}
+
+main .compra__pagar__boton {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 8px 13px;
+  margin: 7% 1% 0% 0%;
+  background-color: white;
+}
+
+main footer {
+  margin: 4% 0% 0% 0%;
+  background-color: #9EC246;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+main footer div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main footer div:nth-child(1) {
+  margin: 0px 0px 0px 75px;
+}
+
+main footer div:nth-child(2) {
+  color: white;
+  margin: 0px 0px 0px 75px;
+  line-height: 45px;
+}
+
+main footer div:nth-child(2) span {
+  font-family: WonderBold;
+}
+
+main footer div:nth-child(3) {
+  color: white;
+  margin: 0px 0px 0px 75px;
+  line-height: 45px;
+}
+
+main footer div:nth-child(3) ul {
+  list-style-type: none;
+}
+
+main footer div:nth-child(3) span {
+  font-family: WonderBold;
 }
 /*# sourceMappingURL=comprar.css.map */
