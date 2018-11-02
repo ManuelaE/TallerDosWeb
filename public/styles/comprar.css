@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: WonderMedium;
+  src: url(/fonts/WonderUnitSans-Medium.woff);
+}
+
+@font-face {
+  font-family: WonderBold;
+  src: url(/fonts/WonderUnitSans-Bold.woff);
+}
+
+@font-face {
+  font-family: WonderRegular;
+  src: url(/fonts/WonderUnitSans-Regular.woff);
+}
+
+@font-face {
+  font-family: WonderSemibold;
+  src: url(/fonts/WonderUnitSans-Semibold.woff);
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  font-family: WonderBold;
+  font-size: 45px;
+}
+
+h2 {
+  color: white;
+  font-family: WonderSemibold;
+  font-size: 28px;
+}
+
+.parrafo__uno {
+  font-family: WonderMedium;
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+.parrafo__dos {
+  font-family: WonderRegular;
+  font-size: 20px;
+}
+
+.nav {
+  background-color: #F4D065;
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  font-family: WonderBold;
+}
+
+.nav img {
+  float: left;
+  padding: 0.3% 5%;
+  height: 70%;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0px 60px 0px 0px;
+  padding: 0px;
+  overflow: hidden;
+  float: right;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.nav__rosa) {
+  background-color: #EFBB3A;
+}
+
+.nav__rosa {
+  background-color: #E88982;
+}
+
+.nav__rosa:hover {
+  background-color: #E85652;
+}
+
+.necesario {
+  background-color: white;
+  width: 100%;
+  height: 56px;
+}
+/*# sourceMappingURL=comprar.css.map */

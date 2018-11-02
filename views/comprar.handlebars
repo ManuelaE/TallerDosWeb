@@ -15,10 +15,10 @@
                 <p>Has agregado al carrito estos ítems de nuestra tienda:</p>
                 <h2>Carrito</h2>
                 <section class="compra__carro__prop">
-                    {{#each}}
+                    {{#each productos}}
                         <p>{{@index}}</p>
                         <p>{{titulo}}</p>
-                        <p>{{precio}}</p>
+                        <p class="compra__carro__prop__precio">{{precio}}</p>
                     {{/each}}
                 </section>
                 <section class="compra__carro__tot">
