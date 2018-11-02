@@ -138,7 +138,7 @@
     },
     {
         mas: 'perro',
-        img: "/imagenes/img_dos/7.png",
+        img: "/imagenes/img_dos/23.png",
         titulo: "Arnés Atlántico",
         precio: 72000, 
         talla: [
@@ -155,7 +155,7 @@
     },
     {
         mas: 'perro',
-        img: "/imagenes/img_dos/7.png",
+        img: "/imagenes/img_dos/22.png",
         titulo: "Arnés Fiesta",
         precio: 70000, 
         talla: [
@@ -172,7 +172,7 @@
     },
     {
         mas: 'perro',
-        img: "/imagenes/img_dos/7.png",
+        img: "/imagenes/img_dos/21.png",
         titulo: "Arnés Bambú",
         precio: 74000, 
         talla: [
@@ -189,7 +189,7 @@
     },
     {
         mas: 'perro',
-        img: "/imagenes/img_dos/7.png",
+        img: "/imagenes/img_dos/20.png",
         titulo: "Arnés Carnaval",
         precio: 72000, 
         talla: [
