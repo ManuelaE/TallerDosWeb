@@ -23,13 +23,15 @@
         <section class="compra">
             <section class="compra__carro">
                 <h2 class="compra__carro__tit">¡Hola!</h2>
-                <p>Has agregado al carrito estos ítems de nuestra tienda:</p>
-                <h2>Carrito</h2>
+                <p class="compra__carro__des">Has agregado al carrito estos ítems de nuestra tienda:</p>
+                <h2 class="compra__carro__tit2">Carrito</h2>
                 <section class="compra__carro__prop">
                     {{#each productos}}
+                    <section class="compra__carro__prop__fn">
                         <p>{{@index}}</p>
                         <p>{{titulo}}</p>
-                        <p class="compra__carro__prop__precio">{{precio}}</p>
+                        <p class="compra__carro__prop__fn__precio">{{precio}}</p>
+                    </section>
                     {{/each}}
                 </section>
                 <section class="compra__carro__tot">

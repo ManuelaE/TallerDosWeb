@@ -117,7 +117,68 @@ main .compra {
           flex-direction: row;
 }
 
+main .compra__carro {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #E85652;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5% 0%;
+}
+
 main .compra__carro__tit {
-  color: #000744;
+  padding: 5% 5% 2% 5%;
+  font-size: 24px;
+}
+
+main .compra__carro__des {
+  padding: 0% 5%;
+  font-size: 15px;
+  font-family: WonderRegular;
+  color: white;
+}
+
+main .compra__carro__tit2 {
+  padding: 6% 0%;
+  font-size: 28px;
+  text-align: center;
+}
+
+main .compra__carro__prop {
+  font-family: WonderRegular;
+  color: white;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+main .compra__carro__prop__fn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .compra__pagar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=comprar.css.map */
