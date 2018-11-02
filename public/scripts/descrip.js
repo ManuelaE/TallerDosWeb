@@ -1,28 +1,29 @@
 window.addEventListener('load', function(){
 
-    var colores = document.querySelectorAll('.des__color');
+    var colores = document.querySelector('.descrip__des__color__cubo');
+    console.log(colores);
+    //colores.style.backgroundColor = 'blue';
 
-    colores.forEach(function (elem){
-        switch(elem.getAttribute('data-color')){
+        switch(colores.getAttribute('data-color')){
             case 'azul':
-                elem.style.backgroundColor = 'blue';
+            colores.style.backgroundColor = 'blue';
+                console.log('tt');
             break;
 
             case 'amarillo':
-                elem.style.backgroundColor = 'yellow';
+            colores.style.backgroundColor = 'yellow';
             break;
 
             case 'verde':
-                elem.style.backgroundColor = 'green';
+            colores.style.backgroundColor = 'green';
             break;
 
             case 'rojo':
-                elem.style.backgroundColor = 'red';
+            colores.style.backgroundColor = 'red';
             break;
 
             case 'otros':
-                elem.style.backgroundColor = 'orange';
+            colores.style.backgroundColor = 'orange';
             break;
         }
-    });
 });

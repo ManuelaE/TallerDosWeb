@@ -144,9 +144,53 @@ main{
     
         &__des{
             flex: 1;
+            margin: 5% 0%;
 
             &__tit{
                 color: $azulOs;
+                margin-bottom: 11%;
+            }
+
+            &__paf{
+                font-family: WonderRegular;
+                margin-bottom: 5%;
+                
+            }
+
+            &__def{
+                font-family: WonderRegular;
+                margin-bottom: 15%;
+            }
+
+            &__color{
+                font-family: WonderRegular;
+                display: flex;
+
+                &__txt{
+                    margin-right: 5%;
+                    margin-bottom: 5%;
+                }
+
+                &__cubo{
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+
+            &__botones{
+
+                button{
+                    text-align: center;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    width: 150px;
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    padding: 8px 13px;
+                    margin: 0% 1% 0% 0%; 
+                    background-color: white;
+                }
+
             }
         }
     }

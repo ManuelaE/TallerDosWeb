@@ -34,21 +34,22 @@
             <section class="descrip__des">
                 {{#each productos}}
                 <h1 class="descrip__des__tit">{{titulo}}</h1>
-                <p>Precio: ${{precio}}</p>
-                <p>Talla: {{talla}}</p>
-                <p>Color:</p>
-                <p class="des__color" data-color="{{color}}"></p>
-                <p>{{descripcion}}</p>
-                <section>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                <p class="descrip__des__paf">Precio: ${{precio}}</p>
+                <p class="descrip__des__paf">Talla: {{talla}}</p>
+                <div class="descrip__des__color">
+                    <p class="descrip__des__color__txt">Color:</p>
+                    <p class="descrip__des__color__cubo" data-color="{{color}}"></p>
+                </div>
+                <p class="descrip__des__def">{{descripcion}}</p>
+                <section class="descrip__des__botones">
+                    <button class="descrip__des__botones__b1">AÑADIR</button>
+                    <button class="descrip__des__botones__b2">COMPRAR</button>
                 </section>
                 {{/each}}
             </section>
         </section>    
     <section>
-        <h2></h2>
+        <h2>Similares</h2>
         <section>
             <img src="" alt="">
         </section>

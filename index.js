@@ -162,7 +162,7 @@ app.get('/tiendafiltro3', function (request, response) {
 app.get('/descrip', function (request, response) {
   
   const col = db.collection('productos');
-
+ 
   col.find({
     titulo: {
       '$eq': request.query.who
